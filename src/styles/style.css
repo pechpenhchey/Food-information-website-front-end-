@@ -1,0 +1,467 @@
+/* Custom CSS  */
+:root {
+    --primary-color: rgb(223, 62, 37);
+    --secondary-color:  rgb(129,180,65);
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    color: var(--primary-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+h4 {
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem;
+    line-height: 1.75rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0p 2px 10px -1px rgb(0 0 0 /19%);
+    --webkit-transition: all .4s ease-out 0s;
+    --o-transition: all .4s ease-out 0s;
+    --moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    --webkit-transition: all .4s ease-out 0s;
+    --o-transition: all .4s ease-out 0s;
+    --moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.logo{
+    height: 100px;
+    width: 100%;
+}
+.main-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.main-btn img{
+    height: 20px;
+}
+
+.white-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+/* Header */
+.navigation-wrap {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    --webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+/* Top-Banner  */
+.top-banner {
+    width: 100%;
+    background: url('../assets/images/banner2.jpg') no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+.cat-banner {
+    width: 100%;
+    background: url('../assets/images/banner2.jpg') no-repeat center;
+    background-size: cover;
+    padding: 10.875rem 0 9.375rem;
+}
+
+.top-banner h1{
+    color: var(--secondary-color);
+    width: 30em;
+}
+.top-banner p{
+    color: #999;
+}
+
+/* About Section  */
+.about-section {
+    background-color: var(--white-color);
+}
+
+.about-section .card,
+.about-section .card img {
+    border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+    padding-left: 2rem;
+}
+
+/* Food Type  */
+.food-type {
+    padding-top: 3.25rem;
+}
+
+.food-type ul li {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
+
+.food-type ul li::before {
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+
+/* recommend  */
+.recommend-section{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.recommend-section h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.recommend-section img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.recommend-section img:hover{
+    box-shadow: 10px 5px 10px #788acb;
+    transform: scale(1.5);
+}
+
+.recommend-section p{
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* Explore Food  */
+.explore-food{
+    margin: 100px;
+}
+.explore-food h2{
+    margin-bottom: 100px;
+}
+.explore-food .card {
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+}
+
+.explore-food h4{
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+}
+.explore-food .card img {
+    border-radius: 0.9375rem;
+    height: 250px;
+    width: 500px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.explore-food .card img:hover{
+    transform: scale(0.9);
+    box-shadow: 10px 10px 10px #788acb;
+}
+
+.explore-food .card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.explore-food .card span del {
+    color: var(--text-gray);
+    margin-left: 0.5rem;
+}
+.more-foods{
+    background: url('../assets/images/exploremore.png') no-repeat center;
+    background-size: cover;
+}
+.cate1:hover{
+    color: white;
+    background-color: var(--primary-color);
+}
+/* Footer Section  */
+.footer {
+    background-color: var(--primary-color);
+}
+
+.footer .footer-link {
+    color: var(--black-color);
+}
+
+.footer a:hover {
+    color: var(--white-color) !important;
+}
+
+.sicon{
+    color: var(--white-color);
+    font-size: 35px;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 18px; 
+    border-color: var(--primary-color);
+}
+
+/* Responsive Design  */
+@media (max-width: 991px) {
+
+    .text-content {
+        width: 100%;
+    }
+
+    .navigation-wrap .navbar-brand-img {
+        height: 3.8125rem;
+    }
+
+    .navigation-wrap {
+        text-align: center;
+        background-color: var(--white-color);
+    }
+
+    .navigation-wrap .nav-link {
+        line-height: 1.875rem;
+    }
+
+     .top-banner h1{
+        font-size: 40px;
+        max-width: 600px;
+        line-height: 1;
+    }
+
+    .benefit-section img{
+        height: 100px;
+        width: 100px;
+    }
+    .benefit-section p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .top-banner h1{
+        font-size: 30px;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    .top-banner p{
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.0625rem;
+    }
+
+    .top-banner {
+        padding: 10.875rem 0 9.375rem;
+    }
+
+    .benefit-section h2{
+        text-align: center;
+    }
+
+    .benefit-section img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .benefit-section p{
+        margin-bottom: 0px;
+    }
+
+    .explore-food {
+        margin: 50px;
+    }
+
+    .footer .footer-link,
+    .footer a i{
+        padding: 0 0.7rem;
+    }
+}
+@media (min-width: 768px) {
+    .search-input {
+      width: 500px;
+    }
+    
+  }
