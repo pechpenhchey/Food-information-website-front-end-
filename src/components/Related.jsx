@@ -26,8 +26,6 @@ const Related = ({ currentFoodId }) => {
               ...doc.data(),
             }));
 
-            console.log('Fetched related foods:', foods); // Log fetched data
-
             // Shuffle the array to randomize the order
             const shuffledFoods = shuffleArray(foods);
 

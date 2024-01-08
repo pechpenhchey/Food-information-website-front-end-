@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../styles/style.css';
-import aboutImg from '../assets/images/about-us.png';
 
 const AboutCom = () => {
     useEffect(() => {

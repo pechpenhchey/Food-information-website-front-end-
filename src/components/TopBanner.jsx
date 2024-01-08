@@ -14,22 +14,15 @@ const TopBanner = ({ onSearch }) => {
 
   const performSearch = async (query) => {
     try {
-      console.log('Start of performSearch');
-
       const q = query(
         collection(db, 'food'),
         where('foodname', '>=', query.toLowerCase())
       );
       const querySnapshot = await getDocs(q);
-
-      console.log('Query Snapshot:', querySnapshot);
-
       const results = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
-
-      console.log('Search Results:', results);
 
       return results;
     } catch (error) {
@@ -51,7 +44,6 @@ const TopBanner = ({ onSearch }) => {
   };
 
   const handleResultClick = (foodId) => {
-    console.log('Result clicked:', foodId);
     navigate(`/food-details/${foodId}`);
   };
 
