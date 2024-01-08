@@ -38,44 +38,44 @@ const AboutCom = () => {
       </div>
 
       {/* Contact us */}
-      <div>
+      <div> 
         <h2 className='pt-5 text-center'>Contact <span>Us</span></h2>
         <div className="col-lg-12">
           <div className="card mt-4 border-0 mb-4">
-            <div className="row mx-auto">
-              <div className="col-lg-4 col-md-4">
-                <div className="card-body d-flex align-items-center pl-0">
-                  <div className="mr-3 align-self-center">
+            <div className="row " >
+              <div className="col-lg-4 col-md-4 col-sm-6 overflow-hidden ">
+                <div className="card-body d-flex align-items-center ">
+                  <div className="me-3 align-self-center">
                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon1.png" alt="Icon 1" />
                   </div>
-                  <div className='p-5'>
+                  <div className='ps-5 pe-0'>
                     <h6 className="font-weight-medium"><span>Address</span></h6>
                     <p>RUPP<br />ITE G8</p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-4">
-                <div className="card-body d-flex align-items-center c-detail">
-                  <div className="mr-3 align-self-center">
+              <div className="col-lg-4 col-md-4 col-sm-6 overflow-hidden">
+                <div className="card-body d-flex align-items-center ">
+                  <div className="me-3 align-self-center">
                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon2.png" alt="Icon 2" />
                   </div>
-                  <div className='p-5'>
-                    <h6 className="font-weight-medium"><span>Phone</span></h6>
+                  <div className='ps-5 pe-0'>
+                    <h6 className="fw-medium"><span>Phone</span></h6>
                     <p>011 548073<br />088 9646724<br />069 486059</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 col-md-4">
-                <div className="card-body d-flex align-items-center c-detail">
-                  <div className="mr-3 align-self-center">
+                <div className="card-body d-flex align-items-center ">
+                  <div className="me-3 align-self-center">
                     <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/icon3.png" alt="Icon 3" />
                   </div>
-                  <div className='p-5'>
+                  <div className='ps-5 pe-0'>
                     <h6 className="font-weight-medium"><span>Email</span></h6>
-                    <p>
-                    soeurm.ravit.2821@rupp.edu.kh<br />
-                    sao.pongpechpenhchey.2821@rupp.edu.kh<br />
-                    sun.sengheang.2821@rupp.edu.kh
+                    <p >
+                      <p className='m-0 text-break'>soeurm.ravit.2821@rupp.edu.kh</p>
+                      <p className='m-0 text-break'>sao.pongpechpenhchey.2821@rupp.edu.kh</p>
+                      <p className='m-0 text-break'>sun.sengheang.2821@rupp.edu.kh</p>
                     </p>
                   </div>
                 </div>

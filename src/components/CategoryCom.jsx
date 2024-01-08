@@ -355,7 +355,7 @@ const Category = () => {
             <h3 className="text-center"style={{paddingTop:'65px'}}>This is the category of <span className='colorcate'>{selectedCategoryText}</span></h3>
             <div className="row" style={{ paddingTop: '50px' }}>
               {loading ? (
-                <div className="loading-spinner" style={{ fontSize: '50px', color:"green" }}>Loading...</div>
+                <div className="loading-spinner" style={{ fontSize: '50px', color:"green" }}><img style={{width : '100%'}} src="https://i.pinimg.com/originals/92/62/d7/9262d7f1dae810ffe0fa5431d9c187bf.gif" alt="" /></div>
               ) : foodData.length === 0 ? (
                 <h1 className='text-center' style={{paddingTop:"350px"}}>There is no food in this category yet.</h1>
               ) : (
