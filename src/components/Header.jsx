@@ -4,11 +4,6 @@ import logo from '../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [isSearchVisible, setIsSearchVisible] = useState(false);
-
-  const toggleSearch = () => {
-    setIsSearchVisible(!isSearchVisible);
-  };
 
   return (
     <nav className="navbar navbar-expand-lg navigation-wrap">
@@ -35,14 +30,14 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/advantages" className="nav-link">
+                Advantages
+              </Link>
+            </li>
+            <li className="nav-item">
             <Link to="/about" className="nav-link">
               About Us
             </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#explore-food">
-                Explore Food
-              </a>
             </li>
             <li className="nav-item">
               <Link to="/category" className="nav-link">
